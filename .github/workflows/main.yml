@@ -17,8 +17,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-        yarn install
-        yarn add @mui/material/Paper
+            yarn install
+            yarn add @mui/material/Paper
 
       - name: Build static file
         run: yarn run build
