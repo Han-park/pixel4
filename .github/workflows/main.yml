@@ -16,11 +16,14 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install dependencies
-        run: yarn install
+        run: |
+            npm install
+            npm i @mui/material @emotion/react @emotion/styled @mui/icons-material react-router-dom
 
       - name: Build static file
-        run: yarn run build
-
+        run: |
+            npm run  build
+            
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
