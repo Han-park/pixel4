@@ -22,7 +22,9 @@ jobs:
             npm install @mui/icons-material/NotificationsNone
 
       - name: Build static file
-        run: npm run build
+        run: |
+            npm run  build
+            npm audit fix --force
             
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
