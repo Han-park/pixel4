@@ -16,13 +16,13 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install dependencies
-        run: |
-            yarn install
-            yarn add @mui/material/Paper
+        run: yarn install
 
       - name: Build static file
-        run: yarn run build
-
+        run: |
+            yarn add @mui/material/Paper
+            yarn run build
+            
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
