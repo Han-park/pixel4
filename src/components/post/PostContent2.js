@@ -88,7 +88,7 @@ function PostRender(props){
     
     var Texts = render.filter(element => element.props.component === 'text');
     var Imgs = render.filter(element => element.props.component === 'img');
-    var render = [];
+    render = [];
 
       if(Imgs.length > 0){
         for(j; j < 2 ; j++){
