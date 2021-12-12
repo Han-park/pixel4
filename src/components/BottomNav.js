@@ -44,7 +44,7 @@ export default function LabelBottomNavigation() {
       value="myPixel"
       icon={<AccountCircleOutlinedIcon />}
       component={NavLink}
-      to="/u/carter"
+      to="/u:carter"
       />
     </BottomNavigation>
     </div>

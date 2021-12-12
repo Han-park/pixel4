@@ -9,6 +9,7 @@ import ExplorePage from "./pages/explorePage";
 import CommunityPage from "./pages/communityPage";
 import UserPage from "./pages/userPage";
 import Post from "./pages/Post";
+import NotFoundPage from "./pages/notFoundPage";
 
 
 const Root = () => {
@@ -20,6 +21,7 @@ const Root = () => {
                 <Route path="community" element={<CommunityPage />} />
                 <Route path="u:carter" element={<UserPage />} />
                 <Route path="p:123456" element={<Post/>} />
+                <Route path="*" element={<NotFoundPage/>} />
 
             </Routes>
         </BrowserRouter>

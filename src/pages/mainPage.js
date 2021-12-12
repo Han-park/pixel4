@@ -34,7 +34,9 @@ export default function MainPage(props){
         </div>
         <Container maxWidth="md" className="container">
                 <div className="feedContainer">
-                    <Feed maxWidth={610} marginTop={-2}/>
+                    <Feed
+                    // maxWidth={610}
+                    marginTop={-2}/>
                 </div>
                 
                 <div className="trendingContainer">
